@@ -8,8 +8,8 @@ CREATE TABLE IF NOT EXISTS Books (
     title VARCHAR(130),
     author_id INT,
     price DOUBLE,
-    publication_date DATE,
-    FOREIGN KEY (author_id) REFERENCES authors(author_id)
+    order_date DATE,
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 CREATE TABLE IF NOT EXISTS Customers (
